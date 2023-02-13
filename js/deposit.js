@@ -24,7 +24,7 @@ document.getElementById('deposit-btn').addEventListener('click', function () {
     //step 2. get the deposit input filed value
     const depositInputValue = getInputValue('deposit-field');
 
-    if (isNaN(depositInputValue)) {
+    if (isNaN(depositInputValue) || depositInputValue < 0) {
         return alert('please provide your number')
     }
     //step 3. get the previous deposit amount

@@ -27,7 +27,7 @@
             <div
                 class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 text-white">
                 <div
-                    class="bg-orange-400 rounded p-6">
+                    class="bg-orange-400 rounded p-8">
                     <h4 class="text-2xl">Deposit
                     </h4>
                     <h1 class="text-5xl">
@@ -36,16 +36,16 @@
                     </h1>
                 </div>
                 <div
-                    class="bg-emerald-400 rounded p-6">
+                    class="bg-emerald-400 rounded p-8">
                     <h4 class="text-2xl">Withdraw
                     </h4>
                     <h1 class="text-5xl">
                         $<span
-                            class="withdraw-element">00</span>
+                            id="withdraw-total">00</span>
                     </h1>
                 </div>
                 <div
-                    class="bg-blue-400 rounded p-6">
+                    class="bg-blue-400 rounded p-8">
                     <h4 class="text-2xl">Balance
                     </h4>
                     <h1 class="text-5xl">
@@ -59,16 +59,16 @@
             <div
                 class="grid grid-cols-1  lg:grid-cols-2 gap-4 ">
                 <div
-                    class="bg-rose-500 rounded p-6">
+                    class="bg-rose-500 rounded p-8">
                     <h4
                         class="text-2xl text-white">
-                        Please
+                        Amount
                         Deposit
                     </h4>
                     <input
                         class="mb-3 mt-4 px-3 p-2 w-full "
-                        type="email"
-                        placeholder="Enter your emil"
+                        type="number"
+                        placeholder="$ Amount you wat to deposit"
                         id="deposit-field">
                     <button
                         class="font-semibold bg-lime-700 text-white px-6 py-2 rounded hover:bg-lime-500 mt-2"
@@ -76,19 +76,19 @@
 
                 </div>
                 <div
-                    class="bg-pink-500 rounded p-6">
+                    class="bg-pink-500 rounded p-8">
                     <h4
                         class="text-2xl text-white">
-                        Please
-                        Deposit
+                        Amount withdraw
                     </h4>
                     <input
                         class="mb-3 mt-4 px-3 p-2 w-full "
-                        type="email"
-                        placeholder="Enter your emil"
+                        type="number"
+                        placeholder="$ Amount you want to withdraw"
                         id="withdraw-field">
                     <button
-                        class="font-semibold bg-lime-700 text-white px-6 py-2 rounded hover:bg-lime-500 mt-2">Withdraw</button>
+                        class="font-semibold bg-lime-700 text-white px-6 py-2 rounded hover:bg-lime-500 mt-2"
+                        id="withdraw-btn">Withdraw</button>
 
                 </div>
             </div>
