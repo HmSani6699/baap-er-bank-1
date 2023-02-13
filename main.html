@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"
+        content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <title>Balance</title>
+    <!-- Tailwind css link -->
+    <script
+        src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header>
+        <h1 class="text-6xl text-center mt-6">
+            Late's get sum
+            <span
+                class="text-lime-600 font-semibold">
+                Moooney</span> !!!
+        </h1>
+    </header>
+    <main>
+        <section class="w-8/12 mx-auto mt-12">
+            <div
+                class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 text-white">
+                <div
+                    class="bg-orange-400 rounded p-6">
+                    <h4 class="text-2xl">Deposit
+                    </h4>
+                    <h1 class="text-5xl">
+                        $<span
+                            id="deposit-element">00</span>
+                    </h1>
+                </div>
+                <div
+                    class="bg-emerald-400 rounded p-6">
+                    <h4 class="text-2xl">Withdraw
+                    </h4>
+                    <h1 class="text-5xl">
+                        $<span
+                            class="withdraw-element">00</span>
+                    </h1>
+                </div>
+                <div
+                    class="bg-blue-400 rounded p-6">
+                    <h4 class="text-2xl">Balance
+                    </h4>
+                    <h1 class="text-5xl">
+                        $<span>00</span></h1>
+                </div>
+            </div>
+        </section>
+        <section class="w-8/12 mx-auto mt-12">
+            <div
+                class="grid grid-cols-1  lg:grid-cols-2 gap-4 ">
+                <div
+                    class="bg-rose-500 rounded p-6">
+                    <h4
+                        class="text-2xl text-white">
+                        Please
+                        Deposit
+                    </h4>
+                    <input
+                        class="mb-3 mt-4 px-3 p-2 w-full "
+                        type="email"
+                        placeholder="Enter your emil"
+                        id="deposit-field">
+                    <button
+                        class="font-semibold bg-lime-700 text-white px-6 py-2 rounded hover:bg-lime-500 mt-2"
+                        id="deposit-btn">Deposit</button>
+
+                </div>
+                <div
+                    class="bg-pink-500 rounded p-6">
+                    <h4
+                        class="text-2xl text-white">
+                        Please
+                        Deposit
+                    </h4>
+                    <input
+                        class="mb-3 mt-4 px-3 p-2 w-full "
+                        type="email"
+                        placeholder="Enter your emil"
+                        id="withdraw-field">
+                    <button
+                        class="font-semibold bg-lime-700 text-white px-6 py-2 rounded hover:bg-lime-500 mt-2"
+                        onclick="calculate('withdraw-field','withdraw-element')">Withdraw</button>
+
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="js/utiliti.js"></script>
+    <script src="js/deposit.js"></script>
+    <script src="js/withdraw.js"></script>
+
+</body>
+
+</html>
